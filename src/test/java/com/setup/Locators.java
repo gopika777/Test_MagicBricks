@@ -1,4 +1,4 @@
-package com.Parameters;
+package com.setup;
 
 import org.openqa.selenium.By;
 
