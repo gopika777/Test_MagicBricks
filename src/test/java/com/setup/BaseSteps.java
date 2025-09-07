@@ -4,6 +4,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class BaseSteps {
@@ -12,6 +13,7 @@ public class BaseSteps {
 	public void launchBrowser() {
 		Properties prop = PropertyReader.readProperties();
 		driver = new ChromeDriver();
+		//driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("URL"));
 			

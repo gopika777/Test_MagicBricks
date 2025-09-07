@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 06 14:41:57 IST 2025</td>
+<td>Started on:</td><td>Sun Sep 07 23:37:33 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3961 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9664 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,69 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.TestRunnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid user login successfully", "Test Buying a property"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input class=&quot;m-login__input&quot; type=&quot;text&quot; value=&quot;&quot; id=&quot;emailOrMobile&quot; name=&quot;emailOrMobile&quot; maxlength=&quot;100&quot; autocomplete=&quot;off&quot; required=&quot;required&quot; onkeypress=&quot;detectEnterKey(event, validateLoginStep1);&quot;&gt; is not clickable at point (1003, 287). Other element would receive the click: &lt;label class=&quot;m-login__label active&quot; for=&quot;emailOrMobile&quot; id=&quot;emailOrMobileLable&quot;&gt;...&lt;/label&gt;
+  (Session info: chrome=140.0.7339.80)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [efa05b7349bc4cae8c2aad621ef713bb, clickElement {id=f.5A52D2F2BA251296FC8A496F9B488BF8.d.8794F996E5751A596DC42E5FF5AE8391.e.8923}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\gopik\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56211/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (efa05b7349bc4cae8c2aad621ef713bb)] -&gt; xpath: //*[@id=&quot;emailOrMobile&quot;]]
+Session ID: efa05b7349bc4cae8c2aad621ef713bb
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.Pages.LoginPage.clickphonenumber(LoginPage.java:40)
+	at com.stepDefinition.Profile.i_am_redirected_to_the_login_page_and_click_on_phonenumber(Profile.java:29)
+	at ✽.I am redirected to the login page and click on phonenumber(file:///C:/Users/gopik/OneDrive/Desktop/Testing_cg/MagicBricks_Testing/src/test/resources/Features/Profile.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2049090498", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2049090498'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input class=&quot;m-login__input&quot; type=&quot;text&quot; value=&quot;&quot; id=&quot;emailOrMobile&quot; name=&quot;emailOrMobile&quot; maxlength=&quot;100&quot; autocomplete=&quot;off&quot; required=&quot;required&quot; onkeypress=&quot;detectEnterKey(event, validateLoginStep1);&quot;&gt; is not clickable at point (1003, 287). Other element would receive the click: &lt;label class=&quot;m-login__label active&quot; for=&quot;emailOrMobile&quot; id=&quot;emailOrMobileLable&quot;&gt;...&lt;/label&gt;
+  (Session info: chrome=140.0.7339.80)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [efa05b7349bc4cae8c2aad621ef713bb, clickElement {id=f.5A52D2F2BA251296FC8A496F9B488BF8.d.8794F996E5751A596DC42E5FF5AE8391.e.8923}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\gopik\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56211}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56211/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (efa05b7349bc4cae8c2aad621ef713bb)] -&gt; xpath: //*[@id=&quot;emailOrMobile&quot;]]
+Session ID: efa05b7349bc4cae8c2aad621ef713bb
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.Pages.LoginPage.clickphonenumber(LoginPage.java:40)
+	at com.stepDefinition.Profile.i_am_redirected_to_the_login_page_and_click_on_phonenumber(Profile.java:29)
+	at ✽.I am redirected to the login page and click on phonenumber(file:///C:/Users/gopik/OneDrive/Desktop/Testing_cg/MagicBricks_Testing/src/test/resources/Features/Profile.feature:7)
+</pre></div></td>
+<td>5</td>
+<td>com.runner.TestRunnerTestNG@24313fcc</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,7 +139,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runner.TestRunnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Launch MagicBricks website", "Buying a property in magicbricks website"</td>
+<td title='com.runner.TestRunnerTestNG.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestRunnerTestNG<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the details of the property and owner successfully", "Test Buying a property"</td>
 <td></td>
 <td>3</td>
 <td>com.runner.TestRunnerTestNG@24313fcc</td></tr>
