@@ -6,21 +6,25 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class PropertyReader {
-
+	
 	public static Properties readProperties() {
+		
 		String fileName = "src/test/resources/PropertiesFiles/profile.properties";
-		Properties prop=null;
+		Properties prop =null;
+		
 		try {
 			FileInputStream fis = new FileInputStream(fileName);
 			prop = new Properties();
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
-			System.out.println("File name is not correct, please check the file name ");
+			// TODO Auto-generated catch block
+			System.out.println("File Name is not correct, please check the file name");
 			e.printStackTrace();
 		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return prop;
+		
 	}
-
 }
