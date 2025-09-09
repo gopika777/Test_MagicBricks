@@ -29,10 +29,10 @@ public class searchHome extends BaseSteps {
         Assert.assertTrue(actResult, "Failed to enter location: " + location);
     }
 
-    @When("the user selects Property Type as {string}")
-    public void the_user_selects_property_type_as(String propertyType) {
-        boolean actResult = searchPage.selectPropertyType(propertyType);
-        Assert.assertTrue(actResult, "Failed to select property type: " + propertyType);
+    @When("the user selects Property Type from dropdown")
+    public void the_user_selects_property_type_from_dropdown() {
+        boolean actResult = searchPage.selectPropertyType();
+        Assert.assertTrue(actResult, "Failed to select property type:" );
     }
     
     @When("the user selects a budget range from the dropdown")
