@@ -1,4 +1,8 @@
 package com.Pages;
+
+
+
+
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Set;
@@ -14,13 +18,13 @@ import com.aventstack.extentreports.Status;
 import com.objectrepository.Locators;
 import com.setup.Reporter;
 
-public class ShortlistPage {
+public class ShortlistPropertyPage {
 
     private WebDriver driver;
     private WebDriverWait wait;
     private ExtentTest extTest;
 
-    public ShortlistPage(WebDriver driver, ExtentTest extTest) {
+    public ShortlistPropertyPage(WebDriver driver, ExtentTest extTest) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         this.extTest = extTest;
@@ -109,4 +113,4 @@ public class ShortlistPage {
             return false;
         }
     }
-} 
+}

@@ -168,7 +168,7 @@ public class Hooks extends BaseSteps {
         }
     }
 
-    // 📌 Helper for screenshots
+    //  Helper for screenshots
     private void saveScreenshot(Scenario scenario) {
         try {
             File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -193,10 +193,10 @@ public class Hooks extends BaseSteps {
 
     @AfterAll
     public static void afterAll() {
-        if (driver != null) {
+       /* if (driver != null) {
             driver.quit();
             System.out.println("Browser closed after all tests");
-        }
+        }*/
         extReports.flush();
     }
 }
