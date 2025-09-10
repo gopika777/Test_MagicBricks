@@ -113,4 +113,16 @@ public class ShortlistPropertyPage {
             return false;
         }
     }
+    
+    public boolean viewBrochureIsPresent() {
+        try {
+            // Wait for the element to be present on the page
+            wait.until(ExpectedConditions.presenceOfElementLocated(Locators.brochure));
+            Reporter.generateReport(driver, extTest, Status.PASS, "View Brochure element is present on the page.");
+            return true;
+        } catch (Exception e) {
+            Reporter.generateReport(driver, extTest, Status.FAIL, "View Brochure element is not present on the page: " + e.getMessage());
+            return false;
+        }
+    }
 }

@@ -48,11 +48,13 @@ public class Locators {
      public static By mostrecent = By.xpath("//*[@id=\"body\"]/div[5]/div/div/div[1]/div[1]/div/div[2]/ul/li[4]");
      
      
-     public static By shortlistButton = By.xpath("//*[@id=\"cardid80170161\"]/div/div[1]/div[2]/span[2]");
+     public static By shortlistButton = By.xpath("//*[@id=\"cardid80084779\"]/div/div[1]/div[2]/span[2]");
      public static By mainshortlistbtn = By.xpath("//*[@id=\"propertysrp\"]/div[1]/div/div/div[2]/div[5]/span");
      public static By viewShortlistBtn = By.xpath("//*[@id=\"propertysrp\"]/div[1]/div/div/div[2]/div[5]/div/div/a");
-     public static By shortlistedPropertyCard = By.xpath("//*[@id=\"cardid80170161\"]/div[2]");
+     public static By shortlistedPropertyCard = By.xpath("//*[@id=\"cardid80084779\"]");
      public static By shortlistTabHeader = By.xpath("//*[@id=\"m-tab-Shortlisted\"]");
+     
+     public static By brochure = By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[2]/section[2]");
      
      
 }

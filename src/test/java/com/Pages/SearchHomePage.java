@@ -62,17 +62,7 @@ public class SearchHomePage {
 			WebElement dropdown = wait.until(ExpectedConditions.elementToBeClickable(Locators.clickPropertType));
 			dropdown.click();
 
-			// First try to clear/deselect all (if available)
-			/*
-			 * try { WebElement clearOption =
-			 * wait.until(ExpectedConditions.elementToBeClickable(Locators.clearPropertyType
-			 * )); ((JavascriptExecutor) driver).executeScript("arguments[0].click();",
-			 * clearOption); Reporter.generateReport(driver, extTest, Status.INFO,
-			 * "Cleared existing property type selection"); } catch (TimeoutException te) {
-			 * Reporter.generateReport(driver, extTest, Status.INFO,
-			 * "No clear option available, continuing..."); }
-			 */
-			// Now select the new option
+		
 			WebElement option = wait.until(ExpectedConditions.elementToBeClickable(Locators.selectPropertyType));
 			((JavascriptExecutor) driver).executeScript("arguments[0].click();", option);
 			WebElement close = wait.until(ExpectedConditions.elementToBeClickable(Locators.closePropertyType));
