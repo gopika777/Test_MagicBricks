@@ -68,13 +68,19 @@ public class Locators {
      
      
      
-     public static By photos=By.xpath("//*[@id=\"details\"]/div/div[4]/div[1]");
-     public static By firstphoto=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div[1]/div[3]/div/ul/li[1]/img");
-     public static By rightarrow=By.xpath("//*[@id=\"myGallery\"]/div/a/div");
-     public static By cross=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div/div/div[1]/div[1]/span[1]/a");
-     public static By navback=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div[1]/div[1]/div/div[1]/span[1]");
+//     public static By photos=By.xpath("//*[@id=\"details\"]/div/div[4]/div[1]");
+//     public static By firstphoto=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div[1]/div[3]/div/ul/li[1]/img");
+//     public static By rightarrow=By.xpath("//*[@id=\"myGallery\"]/div/a/div");
+//     public static By cross=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div/div/div[1]/div[1]/span[1]/a");
+//     public static By navback=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div[1]/div[1]/div/div[1]/span[1]");
      
      public static By offerElement = By.xpath("//*[@id=\"more-details\"]/div[2]/ul/li[4]/div[2]/a/div[1]");
+     
+     public static By aboutloc=By.xpath("//*[@id=\"stickyWebHeader\"]/div/div/div[2]/nav/ul/li[3]/a");
+     public static By rightarrow=By.xpath("//*[@id=\"swiper-button-next\"]");
+     public static By rating=By.xpath("//*[@id=\"localityDetailTabId\"]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/span");
+     
+     
      
      
 }

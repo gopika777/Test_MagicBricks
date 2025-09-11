@@ -31,25 +31,31 @@ public class SearchHomePage {
 	// Enter location
 	public boolean enterLocation(String location) {
 
-		try {
 
-			WebElement locationBox = wait.until(ExpectedConditions.elementToBeClickable(Locators.loc));
-			//((JavascriptExecutor) driver).executeScript("arguments[0].click();", locationBox);//invalid
-			WebElement locationBox1 = wait.until(ExpectedConditions.elementToBeClickable(Locators.deselectchennai));
-			((JavascriptExecutor) driver).executeScript("arguments[0].click();", locationBox1);
-			locationBox.clear();
-			//locationBox.sendKeys(location);/invalid
-			//WebElement locationBox2 = wait.until(ExpectedConditions.elementToBeClickable(Locators.selectbgl));/invalid
-			//((JavascriptExecutor) driver).executeScript("arguments[0].click();", locationBox2);/invalid
+		  try {
+			  
+			  WebElement locationBox =wait.until(ExpectedConditions.elementToBeClickable(Locators.loc));
+			  ((JavascriptExecutor) driver).executeScript("arguments[0].click();", locationBox); 
+			  WebElement locationBox1 =wait.until(ExpectedConditions.elementToBeClickable(Locators.deselectchennai));
+			  ((JavascriptExecutor) driver).executeScript("arguments[0].click();",locationBox1); 
+			  locationBox.clear(); 
+			  locationBox.sendKeys(location);
+			  WebElement locationBox2 =wait.until(ExpectedConditions.elementToBeClickable(Locators.selectbgl));
+			  ((JavascriptExecutor) driver).executeScript("arguments[0].click();",locationBox2); 
 
-			Reporter.generateReport(driver, extTest, Status.PASS, "Entered location: " + location);
-			return true;
-		} catch (Exception e) {
-			Reporter.generateReport(driver, extTest, Status.FAIL, "Failed to enter location: " + e.getMessage());
-			return false;
 
-		}
+			  
+			  Reporter.generateReport(driver, extTest, Status.PASS, "Entered location: " +
+			  location); return true; } catch (Exception e) {
+			  Reporter.generateReport(driver, extTest, Status.FAIL,
+			  "Failed to enter location: " + e.getMessage()); return false;
+			  
+		
 	}
+	}
+	
+
+	 
 
 	// Select property type with clear/deselect first
 	public boolean selectPropertyType() {
@@ -132,21 +138,20 @@ public class SearchHomePage {
 			return false;
 		}
 	}
-
+	
 	public boolean validateStayOnHome() {
-		try {
-			WebElement buyHeading = wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.searchButton));
-
-			if (buyHeading.isDisplayed()) {
-				Reporter.generateReport(driver, extTest, Status.PASS, "User remained on home page.");
-				return true;
-			}
-			return false;
-		} catch (Exception e) {
-			Reporter.generateReport(driver, extTest, Status.FAIL,
-					"User did not remain on home page: " + e.getMessage());
-			return false;
-		}
-	}
-
+        try {
+            WebElement buyHeading = wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.searchButton));
+           
+            if (buyHeading.isDisplayed()) {
+                Reporter.generateReport(driver, extTest, Status.PASS, "User remained on home page.");
+                return true;
+            }
+            return false;
+        } catch (Exception e) {
+            Reporter.generateReport(driver, extTest, Status.FAIL, "User did not remain on home page: " + e.getMessage());
+            return false;
+        }
+    }
+	
 }
