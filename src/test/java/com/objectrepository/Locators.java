@@ -51,13 +51,13 @@ public class Locators {
     
      
      
-     public static By sortBy = By.xpath("//*[@id=\"body\"]/div[5]/div/div/div[1]/div[1]/div[1]");
+     public static By sortBy = By.xpath("//*[@id=\"body\"]/div[5]/div/div/div[1]/div[1]/div/div[1]");
      public static By mostrecent = By.xpath("//*[@id=\"body\"]/div[5]/div/div/div[1]/div[1]/div/div[2]/ul/li[2]");
      
      
      public static By shortlistButton = By.xpath("//*[@id=\"cardid77759225\"]/div/div[1]/div[2]/span[2]");
     // public static By shortlistedPropertyCard = By.xpath("//*[@id=\"cardid81313823\"]/div[2]/div[1]");
-     
+     public static By shortlistTabHeader = By.xpath("//*[@id=\"m-tab-Shortlisted\"]");
      
      public static By mainshortlistbtn = By.xpath("//*[@id=\"propertysrp\"]/div[1]/div/div/div[2]/div[5]/span");
      public static By viewShortlistBtn = By.xpath("//*[@id=\"propertysrp\"]/div[1]/div/div/div[2]/div[5]/div/div/a");
@@ -66,12 +66,15 @@ public class Locators {
      
      public static By shortlistedPropertyCard2 = By.xpath("//*[@id=\"cardid81259709\"]/div[2]/div[1]");
      
-     public static By shortlistTabHeader = By.xpath("//*[@id=\"m-tab-Shortlisted\"]");
+     
      
      public static By photos=By.xpath("//*[@id=\"details\"]/div/div[4]/div[1]");
+     public static By firstphoto=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div[1]/div[3]/div/ul/li[1]/img");
+     public static By rightarrow=By.xpath("//*[@id=\"myGallery\"]/div/a/div");
+     public static By cross=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div/div/div[1]/div[1]/span[1]/a");
      public static By navback=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div[1]/div[1]/div/div[1]/span[1]");
      
-     public static By contactagent = By.xpath("//*[@id=\"contactRightInfo\"]/div[1]/div");
+     public static By offerElement = By.xpath("//*[@id=\"more-details\"]/div[2]/ul/li[4]/div[2]/a/div[1]");
      
      
 }

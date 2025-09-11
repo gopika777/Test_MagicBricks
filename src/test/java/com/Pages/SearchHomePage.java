@@ -2,6 +2,7 @@ package com.Pages;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -149,4 +150,20 @@ public class SearchHomePage {
 			return false;
 		}
 	}
+	
+	public boolean validateStayOnHome() {
+        try {
+            WebElement buyHeading = wait.until(ExpectedConditions.visibilityOfElementLocated(Locators.searchButton));
+           
+            if (buyHeading.isDisplayed()) {
+                Reporter.generateReport(driver, extTest, Status.PASS, "User remained on home page.");
+                return true;
+            }
+            return false;
+        } catch (Exception e) {
+            Reporter.generateReport(driver, extTest, Status.FAIL, "User did not remain on home page: " + e.getMessage());
+            return false;
+        }
+    }
+	
 }
