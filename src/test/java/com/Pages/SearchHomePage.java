@@ -29,32 +29,44 @@ public class SearchHomePage {
 
 	// Enter location
 	public boolean enterLocation(String location) {
-	
-		 try { WebElement locationBox =
-		  wait.until(ExpectedConditions.elementToBeClickable(Locators.enterlocation));
-		  locationBox.clear(); locationBox.sendKeys(location);
-		  Reporter.generateReport(driver, extTest, Status.PASS, "Entered location: " +
-		  location); return true; } catch (Exception e) {
-		 Reporter.generateReport(driver, extTest, Status.FAIL,
-		 "Failed to enter location: " + e.getMessage()); return false; }
-		 }
-		 
 
-		/*try {
-
-			WebElement locationBox = wait.until(ExpectedConditions.elementToBeClickable(Locators.locdummy));
-			((JavascriptExecutor) driver).executeScript("arguments[0].click();", locationBox);
-			WebElement locationBox1 = wait.until(ExpectedConditions.elementToBeClickable(Locators.deselectchennai));
-			((JavascriptExecutor) driver).executeScript("arguments[0].click();", locationBox1);
-			// locationBox.clear();
+	/*	try {
+			WebElement locationBox = wait.until(ExpectedConditions.elementToBeClickable(Locators.enterlocation));
+			locationBox.clear();
 			locationBox.sendKeys(location);
 			Reporter.generateReport(driver, extTest, Status.PASS, "Entered location: " + location);
 			return true;
 		} catch (Exception e) {
 			Reporter.generateReport(driver, extTest, Status.FAIL, "Failed to enter location: " + e.getMessage());
 			return false;
-		}*/
+		}
+	}
+	*/
+		
+		  try {
+			  
+			  WebElement locationBox =wait.until(ExpectedConditions.elementToBeClickable(Locators.loc));
+			  ((JavascriptExecutor) driver).executeScript("arguments[0].click();", locationBox); 
+			  WebElement locationBox1 =wait.until(ExpectedConditions.elementToBeClickable(Locators.deselectchennai));
+			  ((JavascriptExecutor) driver).executeScript("arguments[0].click();",locationBox1); 
+			  locationBox.clear(); 
+			  locationBox.sendKeys(location);
+			  WebElement locationBox2 =wait.until(ExpectedConditions.elementToBeClickable(Locators.selectbgl));
+			  ((JavascriptExecutor) driver).executeScript("arguments[0].click();",locationBox2); 
+
+
+			  
+			  Reporter.generateReport(driver, extTest, Status.PASS, "Entered location: " +
+			  location); return true; } catch (Exception e) {
+			  Reporter.generateReport(driver, extTest, Status.FAIL,
+			  "Failed to enter location: " + e.getMessage()); return false;
+			  
+		
+	}
+	}
 	
+
+	 
 
 	// Select property type with clear/deselect first
 	public boolean selectPropertyType() {
@@ -62,7 +74,6 @@ public class SearchHomePage {
 			WebElement dropdown = wait.until(ExpectedConditions.elementToBeClickable(Locators.clickPropertType));
 			dropdown.click();
 
-		
 			WebElement option = wait.until(ExpectedConditions.elementToBeClickable(Locators.selectPropertyType));
 			((JavascriptExecutor) driver).executeScript("arguments[0].click();", option);
 			WebElement close = wait.until(ExpectedConditions.elementToBeClickable(Locators.closePropertyType));
@@ -88,13 +99,13 @@ public class SearchHomePage {
 			// Min dropdown
 			WebElement minOption = wait.until(ExpectedConditions.elementToBeClickable(Locators.mindropdown));
 			// minOption.clear();
-			minOption.sendKeys("500000");
+			minOption.sendKeys("100000");
 			minOption.click();
 
 			// Min dropdown
 			WebElement maxOption = wait.until(ExpectedConditions.elementToBeClickable(Locators.maxdropdown));
 			// maxOption.clear();
-			maxOption.sendKeys("15000000");
+			maxOption.sendKeys("10000000");
 			maxOption.click();
 			WebElement closeOption = wait.until(ExpectedConditions.elementToBeClickable(Locators.closeBudget));
 			closeOption.click();

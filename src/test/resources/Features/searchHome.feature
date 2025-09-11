@@ -11,4 +11,4 @@ Feature: Magicbricks Property Search
 
   Examples:
     | location   |  
-    | chennai  |
+    | bangalore |

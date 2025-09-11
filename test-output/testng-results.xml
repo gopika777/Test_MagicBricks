@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-10T14:32:25 IST" name="Default suite" finished-at="2025-09-10T14:34:06 IST" duration-ms="100423">
+  <suite started-at="2025-09-11T10:28:02 IST" name="Default suite" finished-at="2025-09-11T10:30:28 IST" duration-ms="145189">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-09-10T14:32:25 IST" name="Default test" finished-at="2025-09-10T14:34:06 IST" duration-ms="100423">
+    <test started-at="2025-09-11T10:28:02 IST" name="Default test" finished-at="2025-09-11T10:30:28 IST" duration-ms="145189">
       <class name="com.runner.TestRunnerTestNG">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" started-at="2025-09-10T14:32:25 IST" name="setUpClass" finished-at="2025-09-10T14:32:30 IST" duration-ms="4318" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" started-at="2025-09-11T10:28:02 IST" name="setUpClass" finished-at="2025-09-11T10:28:10 IST" duration-ms="7137" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6909f6be]]>
+                <![CDATA[org.testng.TestRunner@3f9b7fe1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" started-at="2025-09-10T14:32:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T14:32:30 IST" duration-ms="99" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" started-at="2025-09-11T10:28:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-11T10:28:10 IST" duration-ms="146" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" started-at="2025-09-10T14:32:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T14:33:40 IST" duration-ms="70219" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" started-at="2025-09-11T10:28:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-11T10:29:51 IST" duration-ms="101818" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" started-at="2025-09-10T14:33:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T14:33:45 IST" duration-ms="4880" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" started-at="2025-09-11T10:29:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-11T10:29:58 IST" duration-ms="6660" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" started-at="2025-09-10T14:33:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T14:34:06 IST" duration-ms="20550" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" started-at="2025-09-11T10:29:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-11T10:30:01 IST" duration-ms="3275" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,24 +82,40 @@
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" started-at="2025-09-11T10:30:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-11T10:30:27 IST" duration-ms="25397" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verifying details of property from shortlist result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Details of shortlist property\"]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[View Brochure element is not present on the page: expected [true] but found [false]]]>
+              <![CDATA[Failed to click photos. expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: View Brochure element is not present on the page: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: Failed to click photos. expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertTrue(Assert.java:57)
-at com.stepDefinition.shortlistProperty.I_validate_the_brochure_in_the_property_page(shortlistProperty.java:48)
-at ✽.I validate the brochure in the property page(file:///C:/Users/gopik/OneDrive/Desktop/Testing_cg/MagicBricks_Testing/src/test/resources/Features/shortlistProperty.feature:9)
+at com.stepDefinition.shortlistpropDetails.I_click_on_photos_for_viewing_and_I_click_back_arrow_to_navigate_back(shortlistpropDetails.java:32)
+at ✽.I click on photos for viewing and I click back arrow to navigate back(file:///C:/Users/gopik/OneDrive/Desktop/Testing_cg/MagicBricks_Testing/src/test/resources/Features/shortlistpropDetails.feature:6)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" started-at="2025-09-10T14:34:06 IST" name="tearDownClass" finished-at="2025-09-10T14:34:06 IST" duration-ms="317" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.TestRunnerTestNG@24313fcc]" started-at="2025-09-11T10:30:27 IST" name="tearDownClass" finished-at="2025-09-11T10:30:28 IST" duration-ms="673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

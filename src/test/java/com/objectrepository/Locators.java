@@ -24,9 +24,16 @@ public class Locators {
      
     public static By enterlocation = By.id("keyword");
     //ivalid loc
-    /* public static By clicklocation=By.xpath("//*[@id=\"keyword\"]");
+     
+    // public static By clicklocation=By.xpath("//*[@id=\"keyword\"]");
      public static By deselectchennai=By.xpath("//*[@id=\"keyword_autoSuggestSelectedDiv\"]/div/div[2]");
-     public static By locdummy=By.xpath("//*[@id=\"keyword\"]");*/
+     public static By loc=By.xpath("//*[@id=\"keyword\"]");
+     public static By selectbgl =By.xpath("//*[@id=\"serachSuggest\"]/div[2]/span");
+     
+     
+     
+     
+     
      
      public static By clickPropertType = By.xpath("//*[@id=\"buy_proertyTypeDefault\"]");
      public static By dropdownProperType = By.xpath("//*[@id=\"propType_buy\"]/div[1]");
@@ -44,17 +51,27 @@ public class Locators {
     
      
      
-     public static By sortBy = By.xpath("//*[@id=\"body\"]/div[5]/div/div/div[1]/div[1]/div/div[1]");
-     public static By mostrecent = By.xpath("//*[@id=\"body\"]/div[5]/div/div/div[1]/div[1]/div/div[2]/ul/li[4]");
+     public static By sortBy = By.xpath("//*[@id=\"body\"]/div[5]/div/div/div[1]/div[1]/div[1]");
+     public static By mostrecent = By.xpath("//*[@id=\"body\"]/div[5]/div/div/div[1]/div[1]/div/div[2]/ul/li[2]");
      
      
-     public static By shortlistButton = By.xpath("//*[@id=\"cardid80084779\"]/div/div[1]/div[2]/span[2]");
+     public static By shortlistButton = By.xpath("//*[@id=\"cardid77759225\"]/div/div[1]/div[2]/span[2]");
+    // public static By shortlistedPropertyCard = By.xpath("//*[@id=\"cardid81313823\"]/div[2]/div[1]");
+     
+     
      public static By mainshortlistbtn = By.xpath("//*[@id=\"propertysrp\"]/div[1]/div/div/div[2]/div[5]/span");
      public static By viewShortlistBtn = By.xpath("//*[@id=\"propertysrp\"]/div[1]/div/div/div[2]/div[5]/div/div/a");
-     public static By shortlistedPropertyCard = By.xpath("//*[@id=\"cardid80084779\"]");
+    
+     
+     
+     public static By shortlistedPropertyCard2 = By.xpath("//*[@id=\"cardid81259709\"]/div[2]/div[1]");
+     
      public static By shortlistTabHeader = By.xpath("//*[@id=\"m-tab-Shortlisted\"]");
      
-     public static By brochure = By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[2]/section[2]");
+     public static By photos=By.xpath("//*[@id=\"details\"]/div/div[4]/div[1]");
+     public static By navback=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div[1]/div[1]/div/div[1]/span[1]");
+     
+     public static By contactagent = By.xpath("//*[@id=\"contactRightInfo\"]/div[1]/div");
      
      
 }

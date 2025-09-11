@@ -193,10 +193,10 @@ public class Hooks extends BaseSteps {
 
     @AfterAll
     public static void afterAll() {
-       /* if (driver != null) {
-            driver.quit();
-            System.out.println("Browser closed after all tests");
-        }*/
+//        if (driver != null) {
+//            driver.quit();
+//            System.out.println("Browser closed after all tests");
+//        }
         extReports.flush();
     }
 }
