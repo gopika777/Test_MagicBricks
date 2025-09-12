@@ -1,6 +1,8 @@
 Feature: View Property Photos
-Scenario: View and close the photo gallery
+Background:
 Given the user is on the shortlisted property details
+Scenario: View and close the photo gallery
+
 When I click the photo gallery 
 And photo gallery opens
 And I click the first photo

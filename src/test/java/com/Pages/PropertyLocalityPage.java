@@ -1,7 +1,8 @@
-package com.Pages;
+package com.pages;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,10 +11,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.objectrepository.Locators;
+
 import com.setup.Reporter;
 
 public class PropertyLocalityPage {
+
+	// Locators
+	public static By aboutloc = By.xpath("//*[@id=\"stickyWebHeader\"]/div/div/div[2]/nav/ul/li[3]/a");
+	public static By rightarrow = By.xpath("//*[@id=\"swiper-button-next\"]");
+	public static By rating = By
+			.xpath("//*[@id=\"localityDetailTabId\"]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/span");
 
 	private WebDriver driver;
 	private WebDriverWait wait;
@@ -25,11 +32,10 @@ public class PropertyLocalityPage {
 		this.extTest = extTest;
 	}
 
-
 	public boolean clickAboutLocality() {
 		try {
 			// Wait for the 'About Locality' element to be visible and clickable.
-			WebElement aboutLocalityBtn = wait.until(ExpectedConditions.elementToBeClickable(Locators.aboutloc));
+			WebElement aboutLocalityBtn = wait.until(ExpectedConditions.elementToBeClickable(aboutloc));
 			aboutLocalityBtn.click();
 			Reporter.generateReport(driver, extTest, Status.PASS, "Successfully clicked About Locality.");
 			return true;
@@ -40,11 +46,10 @@ public class PropertyLocalityPage {
 		}
 	}
 
-
 	public boolean clickRightArrow() {
 		try {
 			// Wait for the right arrow element to be clickable.
-			WebElement rightArrow = wait.until(ExpectedConditions.elementToBeClickable(Locators.rightarrow));
+			WebElement rightArrow = wait.until(ExpectedConditions.elementToBeClickable(rightarrow));
 			rightArrow.click();
 			Reporter.generateReport(driver, extTest, Status.PASS, "Successfully clicked the right arrow.");
 			return true;
@@ -54,11 +59,10 @@ public class PropertyLocalityPage {
 		}
 	}
 
-
 	public boolean clickRatingDropdown() {
 		try {
 			// Wait for the ratings dropdown to be clickable.
-			WebElement ratingDropdown = wait.until(ExpectedConditions.elementToBeClickable(Locators.rating));
+			WebElement ratingDropdown = wait.until(ExpectedConditions.elementToBeClickable(rating));
 			ratingDropdown.click();
 			Reporter.generateReport(driver, extTest, Status.PASS, "Successfully clicked the ratings dropdown.");
 			return true;
@@ -68,7 +72,6 @@ public class PropertyLocalityPage {
 			return false;
 		}
 	}
-
 
 	public boolean scrollToTop() {
 		try {

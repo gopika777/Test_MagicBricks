@@ -1,6 +1,11 @@
+@validlogin
+
 Feature:Test Buying a property 
-Scenario Outline:Get the details of the property and owner successfully
+Background:
 Given I launch the magicbricks website
+
+Scenario Outline:Get the details of the property and owner successfully
+
 Scenario: Valid user login successfully
   Given I am on the homepage
   When I click on the login button
