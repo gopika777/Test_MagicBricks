@@ -52,10 +52,10 @@ public class Locators {
      
      
      public static By sortBy = By.xpath("//*[@id=\"body\"]/div[5]/div/div/div[1]/div[1]/div/div[1]");
-     public static By mostrecent = By.xpath("//*[@id=\"body\"]/div[5]/div/div/div[1]/div[1]/div/div[2]/ul/li[2]");
+     public static By mostrecent = By.xpath("//*[@id=\"body\"]/div[5]/div/div/div[1]/div[1]/div/div[2]/ul/li[3]");
      
      
-     public static By shortlistButton = By.xpath("//*[@id=\"cardid77759225\"]/div/div[1]/div[2]/span[2]");
+     public static By shortlistButton = By.xpath("//*[@id=\"cardid42927687\"]/div/div[1]/div[2]/span[2]");
     // public static By shortlistedPropertyCard = By.xpath("//*[@id=\"cardid81313823\"]/div[2]/div[1]");
      public static By shortlistTabHeader = By.xpath("//*[@id=\"m-tab-Shortlisted\"]");
      
@@ -68,10 +68,10 @@ public class Locators {
      
      
      
-//     public static By photos=By.xpath("//*[@id=\"details\"]/div/div[4]/div[1]");
-//     public static By firstphoto=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div[1]/div[3]/div/ul/li[1]/img");
-//     public static By rightarrow=By.xpath("//*[@id=\"myGallery\"]/div/a/div");
-//     public static By cross=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div/div/div[1]/div[1]/span[1]/a");
+     public static By photos=By.xpath("//*[@id=\"details\"]/div/div[4]/div[1]/div/img");
+     public static By firstphoto=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div[1]/div[3]/div/ul/li[1]/img");
+     public static By picrightarrow=By.xpath("//*[@id=\"myGallery\"]/div/a/div");
+     public static By cross=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div/div/div[1]/div[1]/span[1]/a");
 //     public static By navback=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[2]/div/div/div[1]/div[3]/div/div[1]/div[1]/div/div[1]/span[1]");
      
      public static By offerElement = By.xpath("//*[@id=\"more-details\"]/div[2]/ul/li[4]/div[2]/a/div[1]");
@@ -81,6 +81,11 @@ public class Locators {
      public static By rating=By.xpath("//*[@id=\"localityDetailTabId\"]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/span");
      
      
+     public static By sidebar= By.xpath("//*[@id=\"details\"]/div/div[1]/div[2]");
+     public static By reportissue=By.xpath("//li[text()='Report an issue']");
+     public static By clickno=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[4]/div/div/div/div/div[2]/span[2]");
+     public static By feedbacksumbit=By .xpath("//*[@id=\"propertyDetail\"]/div[4]/div[4]/div/div/div/div[3]/span");
+     public static By errormsg=By.xpath("//*[@id=\"propertyDetail\"]/div[4]/div[4]/div/div/div/div[2]/div[3]");
      
      
 }
