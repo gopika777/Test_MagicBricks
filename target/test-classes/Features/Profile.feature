@@ -3,7 +3,7 @@
 Feature:Test Buying a property 
 Background:
 Given I launch the magicbricks website
-
+#TS_MB_01 
 Scenario Outline:Get the details of the property and owner successfully
 
 Scenario: Valid user login successfully

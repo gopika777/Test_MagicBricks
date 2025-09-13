@@ -1,6 +1,8 @@
 Feature: View Property Photos
 Background:
 Given the user is on the shortlisted property details
+
+#TS_MB_11 
 Scenario: View and close the photo gallery
 
 When I click the photo gallery 

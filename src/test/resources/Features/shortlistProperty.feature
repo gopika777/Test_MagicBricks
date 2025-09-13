@@ -1,7 +1,7 @@
 Feature: Shortlist property from listing page
 Background:
 Given the user is on the property listing page
-
+#TS_MB_10 
 Scenario: Verify shortlisting a property from the listing results
 
 And clicks on sortby and selects most recent filter

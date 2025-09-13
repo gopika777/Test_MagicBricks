@@ -3,12 +3,12 @@ Feature: Search Home Invalid Scenarios
 
 Background: 
 	Given I am on the Magicbricks home page
-
+#TS_MB_05 
   Scenario: Invalid location entered
     When I enter "Invalid Location" in the Search bar
     And I click on the Search button
     Then user should remain on the home page
-
+#TS_MB_05 
   Scenario: No location entered
     When I enter "" in the Search bar
     And I click on the Search button
