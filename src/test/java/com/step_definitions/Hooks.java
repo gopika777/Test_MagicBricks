@@ -1,5 +1,5 @@
 
-package com.step_definition;
+package com.step_definitions;
 
 import java.io.File;
 import java.text.SimpleDateFormat;

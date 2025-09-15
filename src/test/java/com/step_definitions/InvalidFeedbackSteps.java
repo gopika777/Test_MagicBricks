@@ -1,5 +1,5 @@
 
-package com.step_definition;
+package com.step_definitions;
 
 import org.testng.Assert;
 

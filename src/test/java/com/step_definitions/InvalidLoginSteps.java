@@ -1,4 +1,4 @@
-package com.step_definition;
+package com.step_definitions;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
